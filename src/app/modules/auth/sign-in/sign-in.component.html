@@ -35,16 +35,16 @@
 
                 <!-- Email field -->
                 <mat-form-field class="w-full">
-                    <mat-label>Email address</mat-label>
+                    <mat-label>Enter your NTID</mat-label>
                     <input
                         id="email"
                         matInput
                         [formControlName]="'email'">
                     <mat-error *ngIf="signInForm.get('email').hasError('required')">
-                        Email address is required
+                        NTID is required
                     </mat-error>
                     <mat-error *ngIf="signInForm.get('email').hasError('email')">
-                        Please enter a valid email address
+                        Please enter a valid NTID
                     </mat-error>
                 </mat-form-field>
 
@@ -166,13 +166,13 @@
         <!-- Content -->
         <div class="z-10 relative w-full max-w-2xl">
             <div class="text-7xl font-bold leading-none text-gray-100">
-                <div>Welcome to</div>
-                <div>our community</div>
+                <div></div>
+                <div>Monitoring Portal</div>
             </div>
             <div class="mt-6 text-lg tracking-tight leading-6 text-gray-400">
-                Fuse helps developers to build organized and well coded dashboards full of beautiful and rich modules.
-                Join us and start building your application today.
+                Monitor and Manage Kafka
             </div>
+            <!--
             <div class="flex items-center mt-8">
                 <div class="flex flex-0 items-center -space-x-1.5">
                     <img
@@ -189,7 +189,7 @@
                         src="assets/images/avatars/male-16.jpg">
                 </div>
                 <div class="ml-4 font-medium tracking-tight text-gray-400">More than 17k people joined us, it's your turn</div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
